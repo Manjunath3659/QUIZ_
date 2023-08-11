@@ -6,47 +6,44 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
+    android:background="@color/black"
     tools:context=".MainActivity">
 
-    <EditText
-        android:id="@+id/inputTemperature"
+    <TextView
+        android:id="@+id/questionTextView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter Temperature"
-        android:inputType="numberDecimal" />
-
-    <RadioGroup
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <RadioButton
-            android:id="@+id/celsiusToFar"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Celsius to Fahrenheit"
-            android:checked="true" />
-
-        <RadioButton
-            android:id="@+id/farToCelsius"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Fahrenheit to Celsius" />
-    </RadioGroup>
+        android:text="Question Text"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:id="@+id/option1Button"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:onClick="convertTemperature"
-        android:text="Convert" />
-
-    <TextView
-        android:id="@+id/resultText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
         android:layout_marginTop="16dp"
-        android:text="Result:"
-        android:textSize="18sp" />
+        android:text="Option 1" />
+
+    <Button
+        android:id="@+id/option2Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Option 2" />
+
+    <Button
+        android:id="@+id/option3Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Option 3" />
+
+    <Button
+        android:id="@+id/option4Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Option 4" />
 
 </LinearLayout>
